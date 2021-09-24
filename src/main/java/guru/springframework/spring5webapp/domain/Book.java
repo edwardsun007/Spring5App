@@ -31,12 +31,12 @@ public class Book {
     public Book() {
     }
 
-    public prviate getPublisher() {
-        return Publisher;
+    public Publisher getPublisher() {
+        return publisher;
     }
 
-    public void setPublisher(prviate publisher) {
-        Publisher = publisher;
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
     }
 
     public String getTitle() {

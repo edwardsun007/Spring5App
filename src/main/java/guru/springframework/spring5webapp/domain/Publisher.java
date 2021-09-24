@@ -18,6 +18,7 @@ public class Publisher {
 
     // Publisher can have many books, but one book only use one publisher
     @OneToMany  // one publisher has many books
+    @JoinColumn(name = "publisher_id") // this is the foreign key in books table, which is publisher's Id field
     private Set<Book> books = new HashSet<>();
 
     public Publisher() {
