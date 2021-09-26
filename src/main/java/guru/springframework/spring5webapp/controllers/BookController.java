@@ -18,6 +18,6 @@ public class BookController {
     @RequestMapping("/books") // when Spring MVC get request to /books URL
     public String getBooks(Model model) {
         model.addAttribute("books", bookRepository.findAll());
-        return "books";
+        return "books/list";
     }
 }
