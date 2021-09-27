@@ -7,6 +7,8 @@ import java.util.Set;
 @Entity
 public class Book {
 
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -29,6 +31,10 @@ public class Book {
     }
 
     public Book() {
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public Publisher getPublisher() {
